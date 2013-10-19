@@ -1,0 +1,5 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} !^vestup\.co$ [NC]
+RewriteRule ^(.*)$ http://vestup.co/$1 [R=301,L]
